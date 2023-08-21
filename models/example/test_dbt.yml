@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: Employee
+    description:Information about Employee
+
+    columns:
+      - name: ID
+        description: Unique identifier of Employee
+        tests:
+            - unique
+            - not_null
