@@ -1,12 +1,20 @@
 version: 2
 
 models:
-  - name: Employee
-    description:Information about Employee
+    - name: Employee
+      description: "Information about Employee"
+      columns:
+          - name: Employee_id
+            description: "Unique identifier of Employee"
+            tests:
+                - unique
+                - not_null
 
-    columns:
-      - name: ID
-        description: Unique identifier of Employee
-        tests:
-            - unique
-            - not_null
+    - name: Customer
+      description: "Information about Customer"
+      columns:
+          - name: Customer_id
+            description: "Unique identifier of Customer"
+            tests:
+                - unique
+                - not_null
